@@ -12,6 +12,10 @@
 -- Result: 63810.744836143706
 select avg(salary) from salaries;
 
+-- Question 2: What year was the youngest person born in the company?
+-- Table: employees
+select min(birth_date) from employees;
+
 
 --
 /*
