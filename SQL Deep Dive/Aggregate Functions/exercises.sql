@@ -10,6 +10,9 @@
 -- Table: Salaries
 
 
+-- Question 2: Who is the youngest person in the company?
+-- Table: employees
+
 
 -- BEFORE YOU START
 /*
