@@ -3,9 +3,8 @@
 * Table: customers
 * Question: adjust the following query to display the null values as "No Address"
 */
-
-SELECT *
-FROM customers;
+SELECT COALESCE(address2, 'No Address')
+FROM customers
 
 /*
 * DB: Store
