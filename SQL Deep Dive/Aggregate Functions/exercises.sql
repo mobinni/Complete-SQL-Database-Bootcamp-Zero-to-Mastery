@@ -10,7 +10,7 @@
 -- Table: Salaries
 
 
--- Question 2: Who is the youngest person in the company?
+-- Question 2: What year was the youngest person born in the company?
 -- Table: employees
 
 
