@@ -5,8 +5,6 @@
 * Sample output: https://imgur.com/vXs4093
 */
 
-SELECT emp_no, first_name, EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees
-WHERE firstName ILIKE 'M%';
 
 /*
 * DB: Employees
@@ -15,8 +13,6 @@ WHERE firstName ILIKE 'M%';
 * Expected output: 1846
 */
 
-SELECT count(emp_no) FROM employees
-WHERE first_name ILIKE 'A%R';
                                                   
 /*
 * DB: Store
