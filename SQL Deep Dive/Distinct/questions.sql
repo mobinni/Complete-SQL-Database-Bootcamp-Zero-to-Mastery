@@ -19,7 +19,8 @@ SELECT * FROM employees;
 * DB: World
 * Table: country
 * Question: Can I get a list of distinct life expectancy ages
+* Make sure there are no nulls and it's ordered
 */
 
-SELECT * FROM world;
+SELECT * FROM country;
 
