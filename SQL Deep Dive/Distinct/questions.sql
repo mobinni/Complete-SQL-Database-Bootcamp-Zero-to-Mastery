@@ -1,39 +1,25 @@
 /*
 * DB: Employees
-* Table: employees
-* Question: Get me all the employees above 50, use the appropriate date functions
+* Table: titles
+* Question: What unique titles do we have?
 */
 
 SELECT * FROM employees;
+
 
 /*
 * DB: Employees
 * Table: employees
-* Question: How many employees where hired in February?
+* Question: How many unique birth dates are there?
 */
 
 SELECT * FROM employees;
 
 /*
-* DB: Employees
-* Table: employees
-* Question: How many employees were born in november?
+* DB: World
+* Table: country
+* Question: Can I get a list of distinct life expectancy ages
 */
 
-SELECT * FROM employees;
+SELECT * FROM world;
 
-/*
-* DB: Employees
-* Table: employees
-* Question: Who is the oldest employee? (Use the analytical function MAX)
-*/
-
-SELECT * FROM employees;
-
-/*
-* DB: Store
-* Table: orders
-* Question: How many orders were made in January 2004?
-*/
-
-SELECT * FROM orders;
