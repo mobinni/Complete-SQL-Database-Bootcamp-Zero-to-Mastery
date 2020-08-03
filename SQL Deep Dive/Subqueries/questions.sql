@@ -1,3 +1,4 @@
+/* TRY TO WRITE THESE AS JOINS FIRST */
 /*
 * DB: Store
 * Table: orders
@@ -6,16 +7,8 @@
 */
 
 
-
-/*
-* DB: Store
-* Table: products
-* Question: Show me the inventory for each product
-*/
-
-
 /*
 * DB: Employees
 * Table: employees
-* Question: Show me for each employee which department they work in
+* Question: Filter employees who have emp_no 110183 as a manager
 */
