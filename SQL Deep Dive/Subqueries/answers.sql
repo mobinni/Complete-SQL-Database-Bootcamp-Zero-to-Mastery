@@ -1,3 +1,4 @@
+/* TRY TO WRITE THESE AS JOINS FIRST */
 /*
 * DB: Store
 * Table: orders
