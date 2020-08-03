@@ -5,30 +5,37 @@
 * ordered by orderid
 */
 
-SELECT c.firstname, c.lastname, o.orderid FROM orders AS o
-INNER JOIN customers AS c ON o.customerid = c.customerid
-WHERE c.state IN ('NY', 'OH', 'OR')
+SELECT c.firstname, c.lastname, o.orderid 
+FROM orders AS o, (
+    SELECT customerid, state, firstname, lastname
+    FROM customers
+) AS c
+WHERE  o.customerid = c.customerid AND 
+c.state IN ('NY', 'OH', 'OR')
 ORDER BY o.orderid;
-
-
-/*
-* DB: Store
-* Table: products
-* Question: Show me the inventory for each product
-*/
-
-SELECT p.prod_id, i.quan_in_stock
-FROM products as p
-INNER JOIN inventory AS i oN p.prod_id = i.prod_id 
-
 
 /*
 * DB: Employees
 * Table: employees
-* Question: Show me for each employee which department they work in
+* Question: Filter employees who have emp_no 110183 as a manager
 */
 
-SELECT e.first_name, dp.dept_name
-FROM employees AS e
-INNER JOIN dept_emp AS de ON de.emp_no = e.emp_no
-INNER JOIN departments AS dp ON dp.dept_no = de.dept_no
+SELECT emp_no, first_name, last_name
+FROM employees
+WHERE emp_no IN (
+    SELECT emp_no
+    FROM dept_emp
+    WHERE dept_no = (
+        SELECT dept_no 
+        FROM dept_manager
+        WHERE emp_no = 110183
+    )
+)
+ORDER BY emp_no
+
+-- Written with JOIN
+SELECT e.emp_no, first_name, last_name
+FROM employees as e
+JOIN dept_emp as de USING (emp_no)
+JOIN dept_manager as dm USING (dept_no)
+WHERE dm.emp_no = 110183
