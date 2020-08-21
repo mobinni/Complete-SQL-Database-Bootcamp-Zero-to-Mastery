@@ -1,4 +1,3 @@
-
 --
 /*
  * What database should I use for these exercises?
@@ -14,6 +13,7 @@ select avg(salary) from salaries;
 
 -- Question 2: What year was the youngest person born in the company?
 -- Table: employees
+-- Result: 1952-02-01
 select min(birth_date) from employees;
 
 
@@ -52,4 +52,3 @@ select avg(lifeexpectancy) from country;
 -- Result: 185001
 select AVG(population) from city
 where countrycode = 'NLD';
-

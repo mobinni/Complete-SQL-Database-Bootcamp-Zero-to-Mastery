@@ -7,7 +7,7 @@
 */
 
 SELECT firstname, income, age from customers
-WHERE income > 50000 AND (age <= 30 OR age >= 50)
+WHERE income > 50000 AND (age < 30 OR age > 50)
 and (country = 'Japan' OR country = 'Australia')
 
 
