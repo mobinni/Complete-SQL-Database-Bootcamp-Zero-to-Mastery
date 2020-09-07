@@ -6,7 +6,7 @@
 */
 
 SELECT emp_no, first_name, EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees
-WHERE firstName ILIKE 'M%';
+WHERE first_name ILIKE 'M%';
 
 /*
 * DB: Employees
