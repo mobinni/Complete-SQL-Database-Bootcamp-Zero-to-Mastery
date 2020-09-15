@@ -1,8 +1,8 @@
 -- How many female customers do we have from the state of Oregon (OR) over 20?
--- Result: 103
+-- Result: 106
 SELECT COUNT(firstName)
 FROM customers
-WHERE gender = 'F' and state = 'OR' and age > 20;
+WHERE gender = 'F' and state = 'OR';
 
 -- Who over the age of 44 has an income of 100 000 or more?
 -- Result: 2497
