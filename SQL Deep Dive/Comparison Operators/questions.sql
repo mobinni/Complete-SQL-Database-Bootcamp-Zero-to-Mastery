@@ -3,7 +3,7 @@
 * Write your query here
 */
 
--- Who over the age of 44 has an income of 100 000 or more?
+-- Who over the age of 44 has an income of 100 000 or more? (excluding 44)
 /*
 * Write your query here
 */
