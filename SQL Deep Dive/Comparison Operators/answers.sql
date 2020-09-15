@@ -17,7 +17,7 @@ FROM customers
 WHERE age >= 30 and age =< 50 AND income < 50000;
 
 
--- What is the average income between the ages of 20 and 50?
+-- What is the average income between the ages of 20 and 50? (Excluding 20 and 50)
 -- Result: 59409.926240780098
 SELECT AVG(income)
 FROM customers
