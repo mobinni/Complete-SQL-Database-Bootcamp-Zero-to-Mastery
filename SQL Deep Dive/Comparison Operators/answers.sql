@@ -11,6 +11,7 @@ FROM customers
 WHERE age > 44 and income >= 100000;
 
 -- Who between the ages of 30 and 50 has an income less than 50 000?
+-- (include 30 and 50 in the results)
 SELECT COUNT(income)
 FROM customers
 WHERE age >= 30 and age =< 50 AND income < 50000;
