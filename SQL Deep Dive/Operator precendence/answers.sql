@@ -3,11 +3,12 @@
 * Table: Customers
 * Question: 
 * Select people either under 30 or over 50 with an income above 50000
+* Include people that are 50
 * that are from either Japan or Australia
 */
 
 SELECT firstname, income, age from customers
-WHERE income > 50000 AND (age < 30 OR age > 50)
+WHERE income > 50000 AND (age < 30 OR age >= 50)
 and (country = 'Japan' OR country = 'Australia')
 
 
