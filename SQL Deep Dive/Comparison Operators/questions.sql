@@ -15,7 +15,7 @@
 * Write your query here
 */
 
--- What is the average income between the ages of 20 and 50?
+-- What is the average income between the ages of 20 and 50? (Excluding 20 and 50)
 /*
 * Write your query here
 */
