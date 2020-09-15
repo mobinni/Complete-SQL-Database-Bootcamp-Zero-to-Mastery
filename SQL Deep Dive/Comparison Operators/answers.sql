@@ -1,4 +1,4 @@
--- How many female customers do we have from the state of Oregon (OR) over 20?
+-- How many female customers do we have from the state of Oregon (OR)?
 -- Result: 106
 SELECT COUNT(firstName)
 FROM customers
