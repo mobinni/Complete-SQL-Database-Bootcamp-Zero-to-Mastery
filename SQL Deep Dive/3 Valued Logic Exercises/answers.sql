@@ -22,5 +22,5 @@ WHERE address2 IS NOT null;
 * Question: Fix the following query to apply proper 3VL
 */
 
-SELECT coalesce(lastName, 'Empty'), * from "Student"
+SELECT coalesce(lastName, 'Empty'), * from customers
 where (age IS NULL);
