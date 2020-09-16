@@ -3,7 +3,9 @@
 * Table: employees
 * Question: Find the age of all employees who's name starts with M.
 * Sample output: https://imgur.com/vXs4093
+* Use EXTRACT (YEAR FROM AGE(birth_date)) we will learn about this in later parts of the course
 */
+SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
 
 
 /*
