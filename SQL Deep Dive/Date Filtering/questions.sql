@@ -1,7 +1,7 @@
 /*
 * DB: Employees
 * Table: employees
-* Question: Get me all the employees above 50, use the appropriate date functions
+* Question: Get me all the employees above 60, use the appropriate date functions
 */
 
 SELECT * FROM employees;
