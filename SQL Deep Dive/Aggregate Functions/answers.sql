@@ -36,7 +36,7 @@ select count(id) from towns;
  */
 -- 
 
--- Question 1: How many official languages are there in the world?
+-- Question 1: How many countries have an official language?
 -- Table: countrylanguage
 -- Result: 238
 select count(countrycode) from countrylanguage
