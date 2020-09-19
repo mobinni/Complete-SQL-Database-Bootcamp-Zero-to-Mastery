@@ -32,7 +32,7 @@
  */
 -- 
 
--- Question 1: How many countries have an official language?
+-- Question 1: How many official languages are there?
 -- Table: countrylanguage
 
 -- Question 2: What is the average life expectancy in the world?
