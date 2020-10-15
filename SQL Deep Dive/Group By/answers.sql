@@ -4,10 +4,9 @@
 *  Table: Employees
 */
 
-SELECT a.hire_date, COUNT(b.hire_date) as "amount"
-FROM employees as a, employees as b
-WHERE a.hire_date = b.hire_date
-GROUP BY a.hire_date
+SELECT hire_date, COUNT(hire_date) as "amount"
+FROM employees
+GROUP BY hire_date
 ORDER BY "amount" DESC;
 
 /*
