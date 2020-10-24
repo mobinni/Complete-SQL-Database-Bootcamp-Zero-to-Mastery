@@ -8,7 +8,7 @@ SELECT e.emp_no
 FROM employees as e
 
 /*
-*  Show me all the employees, hired after 1991, that have had more than 2 titles
+*  Show me all the employees, hired after 1991
 *  Database: Employees
 */
 
@@ -17,15 +17,7 @@ FROM employees as e
 
 
 /*
-*  Show me all the employees that have had more than 15 salary changes that work in the department development
-*  Database: Employees
-*/
-
-SELECT e.emp_no
-FROM employees as e
-
-/*
-*  Show me all the employees that have worked for multiple departments
+*  Show me all the employees that work in the department development
 *  Database: Employees
 */
 
