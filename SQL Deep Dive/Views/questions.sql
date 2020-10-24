@@ -5,10 +5,7 @@
 */
 
 CREATE VIEW "90-95" AS
-SELECT *
-FROM employees as e
-WHERE EXTRACT (YEAR FROM e.hire_date) BETWEEN 1990 AND 1995
-ORDER BY e.emp_no;
+-- ...
 
 /*
 *  Create a view "bigbucks" that:
@@ -17,8 +14,4 @@ ORDER BY e.emp_no;
 */
 
 CREATE VIEW "bigbucks" AS
-SELECT e.emp_no, s.salary
-FROM employees as e
-JOIN salaries as s USING(emp_no)
-WHERE s.salary > 80000
-ORDER BY s.salary;
+-- ...
