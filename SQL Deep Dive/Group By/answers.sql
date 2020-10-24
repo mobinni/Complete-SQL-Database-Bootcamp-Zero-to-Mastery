@@ -10,7 +10,7 @@ GROUP BY hire_date
 ORDER BY "amount" DESC;
 
 /*
-*  Show me all the employees, hired after 1991, that have had more than 2 titles
+*  Show me all the employees, hired after 1991
 *  Database: Employees
 */
 
@@ -22,7 +22,7 @@ GROUP BY e.emp_no
 ORDER BY e.emp_no;
 
 /*
-*  Show me all the employees that have had more than 15 salary changes that work in the department development
+*  Show me all the employees that work in the department development
 *  Database: Employees
 */
 
