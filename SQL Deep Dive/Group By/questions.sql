@@ -8,7 +8,7 @@ SELECT e.emp_no
 FROM employees as e
 
 /*
-*  Show me all the employees, hired after 1991
+*   Show me all the employees, hired after 1991 and count the amount of positions they've had
 *  Database: Employees
 */
 
