@@ -10,7 +10,7 @@ GROUP BY hire_date
 ORDER BY "amount" DESC;
 
 /*
-*  Show me all the employees, hired after 1991
+*  Show me all the employees, hired after 1991 and count the amount of positions they've had
 *  Database: Employees
 */
 
