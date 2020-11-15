@@ -26,7 +26,7 @@ ORDER BY e.emp_no;
 *  Database: Employees
 */
 
-SELECT *
+SELECT e.emp_no
 FROM employees as e
 JOIN salaries as s USING(emp_no)
 JOIN dept_emp AS de USING(emp_no)
