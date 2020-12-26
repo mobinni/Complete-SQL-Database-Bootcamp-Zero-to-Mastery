@@ -4,7 +4,7 @@
 *  Table: Employees
 */
 
-SELECT hire_date, COUNT(hire_date) as "amount"
+SELECT hire_date, COUNT(emp_no) as "amount"
 FROM employees
 GROUP BY hire_date
 ORDER BY "amount" DESC;
