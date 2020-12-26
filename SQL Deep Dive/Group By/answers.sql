@@ -22,7 +22,7 @@ GROUP BY e.emp_no
 ORDER BY e.emp_no;
 
 /*
-*  Show me all the employees that work in the department development and when they started and ended
+*  Show me all the employees that work in the department development and the from and to date.
 *  Database: Employees
 */
 SELECT e.emp_no, de.from_date, de.to_date
