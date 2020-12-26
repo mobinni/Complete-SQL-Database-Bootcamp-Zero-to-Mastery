@@ -17,7 +17,7 @@ FROM employees as e
 
 
 /*
-*  Show me all the employees that work in the department development
+*  Show me all the employees that work in the department development and the from and to date.
 *  Database: Employees
 */
 
