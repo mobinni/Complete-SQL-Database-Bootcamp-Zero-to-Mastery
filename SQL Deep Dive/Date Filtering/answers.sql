@@ -48,3 +48,6 @@ SELECT MAX(AGE(birth_date)) FROM employees;
 SELECT COUNT(orderid)
 FROM orders
 WHERE DATE_TRUNC('month', orderdate) = date '2004-01-01';
+SELECT COUNT(orderid)
+FROM orders
+WHERE DATE_TRUNC('month', orderdate) = date '2004-01-01';
