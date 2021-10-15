@@ -14,6 +14,7 @@ select avg(salary) from salaries;
 
 -- Question 2: What year was the youngest person born in the company?
 -- Table: employees
+-- Result: 1965-02-01
 select max(birth_date) from employees;
 
 
