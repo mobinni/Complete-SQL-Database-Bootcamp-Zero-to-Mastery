@@ -4,7 +4,7 @@
 * Question: What unique titles do we have?
 */
 
-SELECT * FROM employees;
+SELECT * FROM titles;
 
 
 /*
