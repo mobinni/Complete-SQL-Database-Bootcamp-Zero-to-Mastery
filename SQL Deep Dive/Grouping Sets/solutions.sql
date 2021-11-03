@@ -9,6 +9,6 @@ FROM public.dept_emp as e
 GROUP BY
 	GROUPING SETS (
 		(e.dept_no),
-     	()
+     		()
 	)
 order by e.dept_no
