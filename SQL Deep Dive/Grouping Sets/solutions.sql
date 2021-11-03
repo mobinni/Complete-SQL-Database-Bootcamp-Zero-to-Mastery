@@ -12,3 +12,19 @@ GROUP BY
      		()
 	)
 order by e.dept_no
+
+
+/*
+*  Calculate the total average salary per department and the total using grouping sets
+*  Database: Employees
+*  Table: Employees
+*/
+select grouping(de.dept_no), de.dept_no, AVG(e.salary)
+FROM public.salaries as e
+JOIN public.dept_emp as de USING (emp_no)
+GROUP BY
+	GROUPING SETS (
+		(de.dept_no),
+     	()
+	)
+order by de.dept_no
