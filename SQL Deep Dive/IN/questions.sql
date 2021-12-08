@@ -6,6 +6,9 @@
 
 SELECT * FROM orders;
 
+SELECT * 
+FROM orders
+where customerid in (7888, 1082, 12808, 9623);
 
 /*
 * DB: World
@@ -14,3 +17,6 @@ SELECT * FROM orders;
 */
 
 SELECT * FROM city;
+
+SELECT * FROM city
+where district in ('Zuid-Holland', 'Noord-Brabant', 'Utrecht');
