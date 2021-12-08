@@ -4,8 +4,16 @@
 /*
 * Write your query here
 */
+SELECT * 
+FROM employees 
+WHERE (age BETWEEN 30 AND 50) AND income < 50000;
+
 
 -- What is the average income between the ages of 20 and 50? (Including 20 and 50)
 /*
 * Write your query here
 */
+
+SELECT avg(income)
+FROM employees 
+WHERE (age BETWEEN 20 AND 50);
