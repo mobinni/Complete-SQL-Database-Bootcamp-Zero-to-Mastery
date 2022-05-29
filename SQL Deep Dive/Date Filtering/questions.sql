@@ -4,7 +4,7 @@
 * Question: Get me all the employees above 60, use the appropriate date functions
 */
 
-select count(emp_no) from employees
+SELECT count(emp_no) from employees
 where birth_date <= (now() - interval '60 years');
 
 /*
