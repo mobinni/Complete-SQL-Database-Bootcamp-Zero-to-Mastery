@@ -2,8 +2,7 @@
 * DB: Store
 * Table: Customers
 * Question: 
-* Select people either under 30 or over 50 with an income above 50000
-* Include people that are 50
+* Select people either under 30 or 50 and over with an income above 50000
 * that are from either Japan or Australia
 */
 
