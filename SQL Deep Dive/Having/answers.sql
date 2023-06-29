@@ -31,9 +31,18 @@ ORDER BY e.emp_no;
 *  Database: Employees
 */
 
-SELECT e.emp_no, count(de.dept_no) as "worked for # departments"
+/*
+* the different departments for which a worker has worked must be
+* counted, since it may be the case that a worker works in department
+* 'd005' then in department 'd004' and then returns to work in
+* department 'd005' again, then the correct answer to the
+* question how many departments have worked? would be 2,
+* while count(de.dept_no) would return 3.
+*/
+
+SELECT e.emp_no, count(distinct de.dept_no) as "worked for # departments" 
 FROM employees as e
 JOIN dept_emp AS de USING(emp_no)
 GROUP BY e.emp_no
-HAVING count(de.dept_no) > 1
+HAVING count(distinct de.dept_no) > 1
 ORDER BY e.emp_no;
