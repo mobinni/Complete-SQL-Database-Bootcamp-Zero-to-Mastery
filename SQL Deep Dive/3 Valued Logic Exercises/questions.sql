@@ -17,6 +17,10 @@ SELECT *
 FROM customers
 WHERE COALESCE(address2, null) IS NOT null;
 
+SELECT * 
+FROM customers 
+WHERE address2 IS NOT NULL;
+
 /*
 * DB: Store
 * Table: customers
