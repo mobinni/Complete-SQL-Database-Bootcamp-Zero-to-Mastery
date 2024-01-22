@@ -17,13 +17,13 @@ ORDER BY e.emp_no;
 *  Database: Employees
 */
 
-SELECT e.emp_no, count(s.from_date) as "amount of raises"
+SELECT e.emp_no, count(s.salary) as "# of raises"
 FROM employees as e
 JOIN salaries as s USING(emp_no)
 JOIN dept_emp AS de USING(emp_no)
 WHERE de.dept_no = 'd005'
 GROUP BY e.emp_no
-HAVING count(s.from_date) > 15
+HAVING count(s.salary) > 15
 ORDER BY e.emp_no;
 
 /*
