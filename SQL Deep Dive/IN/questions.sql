@@ -4,7 +4,9 @@
 * Question: How many orders were made by customer 7888, 1082, 12808, 9623
 */
 
-SELECT * FROM orders;
+SELECT * FROM orders
+where customerid in (7888, 1082, 12808, 9623);
+  
 
 
 /*
@@ -14,3 +16,4 @@ SELECT * FROM orders;
 */
 
 SELECT * FROM city;
+where district in ('Zuid-Holland', 'Noord-Brabant','Utrecht');
