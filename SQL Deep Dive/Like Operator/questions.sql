@@ -8,13 +8,18 @@
 SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
 
 
+SELECT emp_no,first_name,extract(year from AGE(birth_date))as "age" from "public"."employees"
+where first_name like 'M%'
+
+
 /*
 * DB: Employees
 * Table: employees
 * Question: How many people's name start with A and end with R?
 * Expected output: 1846
 */
-
+SELECT count(first_name) from "public"."employees"
+WHERE first_name lIKE 'A%r'
                                                   
 /*
 * DB: Store
@@ -23,7 +28,8 @@ SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
 * Expected output: 4211 
 */
 
-
+select count(firstname) from "public"."customers"
+where zip::text like '%2%';
 
 /*
 * DB: Store
@@ -31,6 +37,8 @@ SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
 * Question: How many people's zipcode start with 2 with the 3rd character being a 1.
 * Expected output: 109 
 */
+select count(firstname) from "public"."customers"
+where zip::text like '2_1%';
 
 
 /*
@@ -40,4 +48,5 @@ SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
 * Replace null values with "No State"                                                  
 * Expected output: https://imgur.com/AVe6G4c
 */
-
+select coalesce(state,'no state') as "state" from "public"."customers"
+where phone::text like '302%'
