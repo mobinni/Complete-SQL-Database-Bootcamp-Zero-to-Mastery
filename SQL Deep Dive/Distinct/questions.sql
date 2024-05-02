@@ -4,8 +4,7 @@
 * Question: What unique titles do we have?
 */
 
-SELECT * FROM titles;
-
+SELECT DISTINCT title from "public"."titles"
 
 /*
 * DB: Employees
@@ -13,7 +12,7 @@ SELECT * FROM titles;
 * Question: How many unique birth dates are there?
 */
 
-SELECT * FROM employees;
+SELECT count(DISTINCT birth_date) from "public"."employees"
 
 /*
 * DB: World
@@ -22,5 +21,6 @@ SELECT * FROM employees;
 * Make sure there are no nulls
 */
 
-SELECT * FROM country;
+SELECT DISTINCT lifeexpectancy FROM country
+WHERE lifeexpectancy IS NOT NULL
 
