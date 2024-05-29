@@ -4,7 +4,11 @@
 *  Database: Employees
 */
 
-CREATE VIEW "90-95" AS
+CREATE  or REPLACE view "90-95" as 
+SELECT  *  from "public"."employees"
+where extract(year from hire_date)>=1990  and extract(year from hire_date)<=1995
+  -- or we use extract(year from hire_date) between 1990 and 1995
+order by emp_no,hire_date
 -- ...
 
 /*
@@ -13,5 +17,8 @@ CREATE VIEW "90-95" AS
 *  Database: Employees
 */
 
-CREATE VIEW "bigbucks" AS
+create or REPLACE view "bigbucks" as 
+SELECT  DISTINCT emp_no from "public"."salaries"
+where salary>80000
+order by emp_no
 -- ...
