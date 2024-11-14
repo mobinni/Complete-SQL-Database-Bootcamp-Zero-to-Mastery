@@ -4,7 +4,7 @@
 * Table: customers
 * Question: adjust the following query to display the null values as "No Address"
 */
-SELECT address2 
+SELECT COALESCE(address2, 'No Address')
 FROM customers
 
 /*
@@ -15,7 +15,7 @@ FROM customers
 
 SELECT *
 FROM customers
-WHERE COALESCE(address2, null) IS NOT null;
+WHERE address2 IS NOT null;
 
 /*
 * DB: Store
@@ -24,4 +24,4 @@ WHERE COALESCE(address2, null) IS NOT null;
 */
 
 SELECT coalesce(lastName, 'Empty'), * from customers
-where (age = null);
+where (age IS NULL);
