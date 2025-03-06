@@ -13,6 +13,9 @@ SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
 * Table: employees
 * Question: How many people's name start with A and end with R?
 * Expected output: 1846
+SELECT * FROM employees
+WHERE first_name ILIKE 'A%R'
+
 */
 
                                                   
@@ -21,6 +24,8 @@ SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
 * Table: customers
 * Question: How many people's zipcode have a 2 in it?.
 * Expected output: 4211 
+SELECT * FROM customers
+WHERE zip::Text LIKE '%2%'
 */
 
 
@@ -30,6 +35,9 @@ SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
 * Table: customers
 * Question: How many people's zipcode start with 2 with the 3rd character being a 1.
 * Expected output: 109 
+SELECT * FROM customers
+WHERE zip::Text LIKE '2_1%'
+
 */
 
 
